@@ -2,6 +2,54 @@
 //- like so './images/image.jpg',
 //- and not './../images/image.jpg'
 
-header
-  h1 Hello world!
-  img(src='./images/js-logo.svg' alt='js logo' width='200')
+header.header
+  a.site-logo(href='#')
+    img(src='./images/logo.png' alt='logo' width="122" height="30")
+
+  nav.site-nav
+    ul.list-unstyled
+      li
+        a.site-nav__item(href='#')
+          span.site-nav__icon.icon-media
+          span Media
+      li
+        a.site-nav__item(href='#')
+          span.site-nav__icon.icon-aim
+          span Royal Battle
+      li
+        a.site-nav__item(href='#')
+          span.site-nav__icon.icon-play
+          span Tournaments
+      li
+        a.site-nav__item(href='#')
+          span.site-nav__icon.icon-refresh
+          span Skill exchange
+
+  .site-nav-wrapper
+
+    nav.site-nav-bottom
+      ul.list-unstyled
+        li
+          a.site-nav-bottom__item(href='#') Contact us
+        li
+          a.site-nav-bottom__item(href='#') Jobs
+        li
+          a.site-nav-bottom__item(href='#') Terms and condition
+        li
+          a.site-nav-bottom__item(href='#') Privacy Policy
+        li
+          a.site-nav-bottom__item(href='#') User agreement
+
+      ul.social-list.list-unstyled.list-inline
+        li
+          a(href='#').social-list__item
+            span.icon-tw
+        li
+          a(href='#').social-list__item
+            span.icon-ut
+        li
+          a(href='#').social-list__item
+            span.icon-fb
+
+    .header-rights
+      p 2011-2018 © WePlay LTD. All right reserved.

@@ -1,0 +1,66 @@
+.header {
+  background-color: $text-color;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 216px;
+
+  &::after {
+    content: "";
+    height: 200px;
+    width: 100%;
+    display: block;
+  }
+}
+
+.site-nav {
+  &__icon {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  &__item {
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &-bottom {
+    &__item {
+      transition: 0.3s ease-in-out;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: #92a9b4;
+      }
+    }
+  }
+}
+
+.social-list {
+  &__item {
+    @extend .site-nav-bottom__item;
+    font-size: 30px;
+  }
+}
+
+.site-nav-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #718792;
+  font-size: 12px;
+}

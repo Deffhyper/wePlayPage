@@ -1,6 +1,7 @@
 @import 'fonts';
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: cornflowerblue;
-}
+@import 'mixin';
+@import 'var';
+@import 'helpers';
+@import 'typography';
+@import 'styles';
+@import 'parts/header';

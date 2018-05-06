@@ -7,3 +7,20 @@ html(lang="en")
     title Document
   body
     include includes/header.pug
+
+    main.content
+      .container
+        h1.main-title Media
+        .language-block.dropdown
+          a.dropdown-trigger(href="#") En
+          .bropdown-content
+            ul.list-unstyled
+              li
+                a(href='#') Ru
+              li
+                a(href='#') En
+
+
+      .container
+
+    include includes/right-comments.pug

@@ -1,0 +1,166 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+  background-color: #fff;
+  color: $text-color;
+  font-size: $font-size;
+  line-height: 1.2;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+p {
+  padding: 0;
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  outline: none;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+div,
+ul,
+li,
+button,
+input,
+textarea {
+  outline: none;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+}
+
+input,
+button {
+  border-radius: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color;
+}
+
+h1,
+.title-h1 {
+  margin-top: 10px;
+}
+
+h2,
+.title-h2 {
+  margin-top: 5px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  padding: 0 10px;
+  border-radius: 0;
+
+  @include placeholder {
+    font-size: 13px;
+    color: #c4c4c4;
+    text-indent: 0;
+    transition: 0.3s ease;
+    font-family: $font;
+  }
+}
+
+fieldset {
+  margin-bottom: 10px;
+}
+
+textarea {
+  padding: 10px;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  text-indent: 10px;
+}
+
+input:focus:-moz-placeholder {
+  opacity: 0;
+  text-indent: 10px;
+}
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+  text-indent: 10px;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  text-indent: 10px;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  text-indent: 10px;
+}
+
+textarea:focus:-moz-placeholder {
+  opacity: 0;
+  text-indent: 10px;
+}
+
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  text-indent: 10px;
+}
+
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  text-indent: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
