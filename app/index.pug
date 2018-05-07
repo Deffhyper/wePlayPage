@@ -10,6 +10,7 @@ html(lang="en")
 
     main.content
       .top-block-wrapper
+
         .container.top-block
           h1.main-title Media
           .top-block__left
@@ -22,7 +23,7 @@ html(lang="en")
                   li
                     a(href='#') En
             .sign-in
-              a.btn.btn--lg.btn--accent Sign in
+              a.btn.btn--lg.btn--accent.modal-trigger(data-modal="#first-modal") Sign in
 
 
       .container.main-container
@@ -135,3 +136,8 @@ html(lang="en")
 
 
     include includes/right-comments.pug
+
+    #first-modal.modal(style="display:none")
+      .modal-content
+        .modal-title
+          h3 Заголовок

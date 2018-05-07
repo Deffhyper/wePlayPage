@@ -32,9 +32,49 @@ export class Common {
     }
   }
 
+  openMobMenu () {
+    const mobTrigger = document.getElementById('mob-menu-trigger')
+    let overlay = document.createElement('div')
+    overlay.className = 'blur'
+
+    mobTrigger.addEventListener('click', function () {
+      this.classList.toggle('active')
+      document.querySelector('.header').classList.toggle('menu-open')
+
+      if (this.classList.contains('active')) {
+        document.body.appendChild(overlay)
+        document.body.classList.add('top-menu-open')
+      } else {
+        overlay.remove()
+        document.body.classList.remove('top-menu-open')
+      }
+      overlay.addEventListener('click', function () {
+        document.querySelector('.header').classList.remove('menu-open')
+        mobTrigger.classList.remove('active')
+        document.body.classList.remove('top-menu-open')
+        this.remove()
+        this.removeEventListener('click')
+      })
+    })
+  }
+
+  modalOpen () {
+    const modalArray = document.querySelectorAll('.modal-trigger')
+    for (let modal of modalArray) {
+      modal.addEventListener('click', function (event) {
+        event.preventDefault()
+        let modalDataAttr = this.dataset.modal
+
+        document.querySelector(modalDataAttr).style.display = 'block'
+      })
+    }
+  }
+
   init () {
     this.dropdown()
     this.closeDropdown()
+    this.openMobMenu()
+    this.modalOpen()
   }
 }
 export default new Common()

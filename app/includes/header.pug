@@ -3,53 +3,85 @@
 //- and not './../images/image.jpg'
 
 header.header
-  a.site-logo(href='#')
-    img(src='./images/logo.png' alt='logo' width="122" height="30")
 
-  nav.site-nav
-    ul.list-unstyled
-      li
-        a.site-nav__item(href='#')
-          span.site-nav__icon.icon-media
-          span Media
-      li
-        a.site-nav__item(href='#')
-          span.site-nav__icon.icon-aim
-          span Royal Battle
-      li
-        a.site-nav__item(href='#')
-          span.site-nav__icon.icon-play
-          span Tournaments
-      li
-        a.site-nav__item(href='#')
-          span.site-nav__icon.icon-refresh
-          span Skill exchange
+  .header-mob-fix
+    a#mob-menu-trigger.mob-menu-trigger
+      span
+      span
+      span
+    a.site-logo(href='#')
+      img(src='./images/logo.png' alt='logo' width="122" height="30")
 
-  .site-nav-wrapper
+    .tablet-block.pull-right
+      .language-block.dropdown
+        button.dropdown__trigger En
+        .dropdown__content
+          ul.list-unstyled
+            li
+              a(href='#') Ru
+            li
+              a(href='#') En
+      .sign-in
+        a.btn.btn--lg.btn--accent Sign in
 
-    nav.site-nav-bottom
+  .header-mob-content
+    nav.site-nav
+
       ul.list-unstyled
         li
-          a.site-nav-bottom__item(href='#') Contact us
+          a.site-nav__item(href='#')
+            span.site-nav__icon.icon-media
+            span Media
         li
-          a.site-nav-bottom__item(href='#') Jobs
+          a.site-nav__item(href='#')
+            span.site-nav__icon.icon-aim
+            span Royal Battle
         li
-          a.site-nav-bottom__item(href='#') Terms and condition
+          a.site-nav__item(href='#')
+            span.site-nav__icon.icon-play
+            span Tournaments
         li
-          a.site-nav-bottom__item(href='#') Privacy Policy
-        li
-          a.site-nav-bottom__item(href='#') User agreement
+          a.site-nav__item(href='#')
+            span.site-nav__icon.icon-refresh
+            span Skill exchange
 
-      ul.social-list.list-unstyled.list-inline
-        li
-          a(href='#').social-list__item
-            span.icon-tw
-        li
-          a(href='#').social-list__item
-            span.icon-ut
-        li
-          a(href='#').social-list__item
-            span.icon-fb
+    .site-nav-wrapper
 
-    .header-rights
-      p 2011-2018 © WePlay LTD. <br/> All right reserved.
+      nav.site-nav-bottom
+        ul.list-unstyled
+          li
+            a.site-nav-bottom__item(href='#') Contact us
+          li
+            a.site-nav-bottom__item(href='#') Jobs
+          li
+            a.site-nav-bottom__item(href='#') Terms and condition
+          li
+            a.site-nav-bottom__item(href='#') Privacy Policy
+          li
+            a.site-nav-bottom__item(href='#') User agreement
+
+        ul.social-list.list-unstyled.list-inline
+          li
+            a(href='#').social-list__item
+              span.icon-tw
+          li
+            a(href='#').social-list__item
+              span.icon-ut
+          li
+            a(href='#').social-list__item
+              span.icon-fb
+
+      .header-rights
+        p 2011-2018 © WePlay LTD. <br/> All right reserved.
+
+      .mob-block
+        .language-block.dropdown
+          button.dropdown__trigger En
+          .dropdown__content
+            ul.list-unstyled
+              li
+                a(href='#') Ru
+              li
+                a(href='#') En
+        .sign-in
+          a.btn.btn--lg.btn--accent Sign in
