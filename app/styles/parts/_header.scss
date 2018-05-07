@@ -16,13 +16,20 @@
   }
 }
 
+.site-logo {
+  padding: 35px 15px;
+  display: block;
+  margin-bottom: 30px;
+}
+
 .site-nav {
   &__icon {
-    font-size: 20px;
+    font-size: 17px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
   }
+
   &__item {
     color: #fff;
     transition: 0.3s ease-in-out;
@@ -30,9 +37,28 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
+    display: block;
+    padding: 6px 15px;
+    margin-bottom: 35px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: transparent;
+      transition: .3s ease;
+    }
 
     &:hover {
       color: $accent-color;
+
+      &::after {
+        background-color: $second-accent;
+      }
     }
   }
 
@@ -40,19 +66,30 @@
     &__item {
       transition: 0.3s ease-in-out;
       text-decoration: none;
+      display: block;
+      margin-bottom: 20px;
 
       &:hover,
       &:focus {
         color: #92a9b4;
       }
     }
+
+    .list-unstyled {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .social-list {
+
+  li + li {
+    margin-left: 20px;
+  }
+
   &__item {
     @extend .site-nav-bottom__item;
-    font-size: 30px;
+    font-size: 16px;
   }
 }
 
@@ -63,4 +100,5 @@
   width: 100%;
   color: #718792;
   font-size: 12px;
+  padding: 0 15px 15px;
 }
