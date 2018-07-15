@@ -6,138 +6,18 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
   body
-    include includes/header.pug
+    .container
+      include includes/header.pug
+      main.content
+        section.content__section
+          h1.content__title
+            | We are
+            span.u-accent-color  a fun - messy -
+            span.u-second-color crazy
+            |  now working on your best expirience
+          p.content__subtitle
+            | We love you! And we are very sorry ... Leave your email and we will immediately let you know when
+            | everything returns to super and we can be crazy
+        .decor
+          img(src="./images/back.svg")
 
-    main.content
-      .top-block-wrapper
-
-        .container.top-block
-          h1.main-title Media
-          .top-block__left
-            .language-block.dropdown
-              button.dropdown__trigger En
-              .dropdown__content
-                ul.list-unstyled
-                  li
-                    a(href='#') Ru
-                  li
-                    a(href='#') En
-            .sign-in
-              a.btn.btn--lg.btn--accent.modal-trigger(data-modal="#first-modal") Sign in
-
-
-      .container.main-container
-        ul.list-unstyled.custom-grid-wrapper
-          li.custom-grid-66
-            .media.media-top
-              span.media__image
-                img(src='images/f-2.jpg')
-              span.media__overlay
-                a.btn.btn--md.btn--white(href="#") Counter-Strike
-                a.media__title(href="#") Structuring harmony before nationality: the validation of Hellraisers
-
-          li.custom-grid-33
-            .media.media-top
-              span.media__image
-                img(src='images/f-1.jpg')
-              span.media__overlay
-                a.btn.btn--md.btn--white(href="#") Counter-Strike
-                a.media__title(href="#") Smooya officially becomes BIG Clan's first non-German signing
-
-          li.custom-grid-33
-            .media
-              a(href="#").media__image
-                img(src='images/f-3.jpg')
-
-              ul.media__indicators.list-inline
-                li
-                  a.btn.btn--red.btn--sm(href="#") Counter-Strike
-                li
-                  a.btn.btn--red.btn--sm(href="#") News
-
-              a.media__title(href="#") Astralis topple Natus Vincere to win Dream Hack Masters Marseille 2018
-
-              p.media__text Combine this with BCI, so that it will not only expand my content horizon faster than
-                | I can consume it, AND with content I WANT!
-
-          li.custom-grid-33
-            .media
-              a(href="#").media__image
-                img(src='images/f-5.jpg')
-              ul.media__indicators.list-inline
-                li
-                  a.btn.btn--red.btn--sm(href="#") Overwatch
-                li
-                  a.btn.btn--red.btn--sm(href="#") News
-
-              a.media__title(href="#") OWL Daily: Battle for Los Angeles ends with a nail biting five game series
-
-              p.media__text Game 1: Los Angeles Valiant vs Los Angeles Gladiators
-                  | Valiant wins 3-2
-
-          li.custom-grid-33
-            .media
-              a(href="#").media__image
-                img(src='images/f-6.jpg')
-              ul.media__indicators.list-inline
-                li
-                  a.btn.btn--red.btn--sm(href="#") Dota 2
-
-              a.media__title(href="#") Astralis topple Natus Vincere to win Dream Hack Masters Marseille 2018
-
-              p.media__text Combine this with BCI, so that it will not only expand my content horizon faster than
-                | I can consume it, AND with content I WANT!
-
-          li.custom-grid-33
-            .media
-              a(href="#").media__image
-                img(src='images/f-3.jpg')
-
-              ul.media__indicators.list-inline
-                li
-                  a.btn.btn--red.btn--sm(href="#") Counter-Strike
-                li
-                  a.btn.btn--red.btn--sm(href="#") News
-
-              a.media__title(href="#") Astralis topple Natus Vincere to win Dream Hack Masters Marseille 2018
-
-              p.media__text Combine this with BCI, so that it will not only expand my content horizon faster than
-                | I can consume it, AND with content I WANT!
-
-          li.custom-grid-33
-            .media
-              a(href="#").media__image
-                img(src='images/f-5.jpg')
-
-              ul.media__indicators.list-inline
-                li
-                  a.btn.btn--red.btn--sm(href="#") Overwatch
-                li
-                  a.btn.btn--red.btn--sm(href="#") News
-
-              a.media__title(href="#") OWL Daily: Battle for Los Angeles ends with a nail biting five game series
-
-              p.media__text Game 1: Los Angeles Valiant vs Los Angeles Gladiators
-                  | Valiant wins 3-2
-
-          li.custom-grid-33
-            .media
-              a(href="#").media__image
-                img(src='images/f-6.jpg')
-
-              ul.media__indicators.list-inline
-                li
-                  a.btn.btn--red.btn--sm(href="#") Dota 2
-
-              a.media__title(href="#") Astralis topple Natus Vincere to win Dream Hack Masters Marseille 2018
-
-              p.media__text Combine this with BCI, so that it will not only expand my content horizon faster than
-                | I can consume it, AND with content I WANT!
-
-
-    include includes/right-comments.pug
-
-    #first-modal.modal(style="display:none")
-      .modal-content
-        .modal-title
-          h3 Заголовок
