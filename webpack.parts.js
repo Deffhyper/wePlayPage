@@ -162,13 +162,32 @@ exports.loadImages = ({ include, exclude, options } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.(png|jpg|svg)$/,
+        test: /\.(png|jpg|svg|mp4)$/,
 
         include,
         exclude,
 
         use: {
           loader: 'url-loader',
+          options
+        }
+      }
+    ]
+  }
+})
+
+
+exports.loadVideo = ({ include, exclude, options } = {}) => ({
+  module: {
+    rules: [
+      {
+        test: /\.(mp4)$/,
+
+        include,
+        exclude,
+
+        use: {
+          loader: 'file-loader',
           options
         }
       }
@@ -229,7 +248,7 @@ exports.loadFonts = ({ include, exclude, options } = {}) => ({
         exclude,
 
         use: {
-          loader: 'url-loader',
+          loader: 'file-loader',
           options
         }
       }

@@ -69,6 +69,12 @@ const commonConfig = merge([
     options: {
       name: 'fonts/[name].[hash:8].[ext]'
     }
+  }),
+  parts.loadVideo({
+    include: PATHS.app,
+    options: {
+      name: 'video/[name].[hash:8].[ext]'
+    }
   })
 ])
 

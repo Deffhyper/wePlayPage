@@ -5,6 +5,13 @@
   align-items: center;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: 1632px;
+  transform: translateX(-50%);
+  max-width: 100%;
+
+  &__logo {
+    display: inline-block;
+    position: relative;
+  }
 }

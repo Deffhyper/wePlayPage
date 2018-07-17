@@ -9,9 +9,15 @@
 }
 
 .u-accent-color {
-  color: $accent-color !important;
+  transition: color .3s ease;
+  &.active {
+    color: $accent-color !important;
+  }
 }
 
 .u-second-color {
-  color: $second-accent !important;
+  transition: color .3s ease;
+  &.active {
+    color: $second-accent !important;
+  }
 }
