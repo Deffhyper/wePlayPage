@@ -1,5 +1,4 @@
 @media (min-width: 1460px) {
-
   .container {
     position: static;
   }
@@ -7,7 +6,6 @@
   .content__section {
     padding-top: 0;
   }
-
 }
 
 @media (min-width: 1900px) {
@@ -41,14 +39,21 @@
 }
 
 @media (max-width: 767px) {
+  .container {
+    height: auto;
+  }
+
   .header {
     padding: 24px 0;
-    justify-content: flex-end;
     position: relative;
   }
 
+  .socials-list li + li {
+    margin-left: 24px;
+  }
+
   .header__logo {
-    display: none;
+    max-width: 100px;
   }
 
   .content__section {
@@ -68,10 +73,15 @@
   .content {
     display: block;
     height: auto;
-    padding-top: 24px;
+    padding-top: 16px;
   }
-  .decor {
-    display: none;
+
+  .decor img {
+    max-height: 320px;
+    max-width: inherit;
+    top: inherit;
+    bottom: -160px;
+    right: 0;
   }
 }
 

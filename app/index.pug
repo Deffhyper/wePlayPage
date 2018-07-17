@@ -7,7 +7,10 @@ html(lang="en")
     title Document
   body
     .decor
-      img(src="./images/bg.png")
+      picture
+        source(media="(max-width: 766px)" srcset="7bb32588fffc9165290ff97954ab8e08.png" data-img-mob)
+        //img(src="./images/bg.png" alt="weblay-background")
+        img(src="./images/pic(2).png" alt="weblay-background")
     .container
       include includes/header.pug
       main.content
